@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Manjari&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 28px;
+}
+p{
+  font-family: 'Cairo', sans-serif;
+}
+
+/* container */
+.container {
+  background-color: rgb(62, 174, 189);
+  overflow: hidden;
+}
+.container .top {
+  width: 650px;
+  margin-left: 0;
+  margin-top: -14%;
+  opacity: 0.6;
+}
+.container .bottom {
+  width: 50%;
+  margin-left: 58%;
+  opacity: 0.6;
+}
+/* card component */
+.container .card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: absolute;
+  height: 420px;
+  width: 520px;
+  margin-left: 32%;
+  top: 33%;
+  z-index: 1;
+}
+
+.container .card .first {
+  margin-top: -20px;
+  width: 108.3%;
+  height: 35%;
+  margin-left: -19.5px;
+  border-radius: 10px;
+}
+
+.container .card .second {
+  width: 25.5%;
+  margin-left: 190px;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+
+.container .card .third {
+  text-align: center;
+  padding: 10px;
+}
+.container .card .fourth {
+  display: flex;
+  padding: 15px;
+}
+.container .card .fourth .one {
+  padding: 0 30px;
+}
+.container .card .fourth .two {
+  padding: 0 40px;
+}
+.container .card .fourth .three {
+  padding: 0 30px;
+}
+.light {
+  color: rgb(129, 129, 129);
+}
+
+.py-1 {
+  font-size: 1.3rem;
+  font-style: ;
+  color: rgb(129, 129, 129);
+  margin-top: 5px;
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+  .container .card {
+    width: 88%;
+    margin-left: 27px;
+    height: 390px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .container .card .first {
+    margin-top: -20px;
+    width: 111.5%;
+    height: 35%;
+    margin-left: -19.5px;
+    border-radius: 10px;
+  }
+  .container .card .second {
+    width: 26.5%;
+    margin-left: 140px;
+    border-radius: 50%;
+    margin-top: -35px;
+  }
+  .container .card .fourth {
+    padding: 30px 5px;
+  }
+  .container .card .fourth .one {
+    padding: 0 20px;
+  }
+  .container .card .fourth .two {
+    padding: 0 30px;
+  }
+  .container .card .fourth .three {
+    padding: 0 30px;
+  }
+}
